@@ -41,3 +41,9 @@ npm run headless
   npx create-codeceptjs .
   npx codeceptjs init #follow the set up steps
   ```
+
+ - [locators](https://codecept.io/locators/
+  
+ - [page objects](https://codecept.io/pageobjects/)
+
+ - [typescript](https://codecept.io/typescript/)
