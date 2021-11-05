@@ -16,12 +16,13 @@ Scenario.skip('Cars info', async ({ I }) => {
   //console.log(JSON.stringify(response.data));
 });
 
-Scenario('Login', async ({ I }) => {
+Scenario('Login with valid credentials', async ({ I }) => {
   const response = await I.sendPostRequest(
     '/api/login.php?username=tester&password=passw0rd',
   );
 
   expect(response.status).eq(200);
+  expect(response.data.status).eq('authorized');
 
   accessToken = response.headers['access-token'];
   expect(accessToken).is.not.undefined;
