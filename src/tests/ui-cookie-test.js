@@ -4,10 +4,10 @@ const { CookiePage } = inject();
 Feature('qatools.ro tricky stuff');
 
 Scenario('Lazy set cookie', async ({ I }) => {
-  await I.amOnPage(CookiePage.url);
-  await I.see('Test Cookies', CookiePage.header);
-  await I.seeCookie('test-cookie');
-  await I.see('Hello testers!', CookiePage.cookieMessage);
+  I.amOnPage(CookiePage.url);
+  I.see('Test Cookies', CookiePage.header);
+  I.seeCookie('test-cookie');
+  I.see('Hello testers!', CookiePage.cookieMessage);
 
   console.log(await CookiePage.getPageContent());
 });

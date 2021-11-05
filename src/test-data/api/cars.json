@@ -1,0 +1,50 @@
+[
+  {
+    "audi": {
+      "model": "A4",
+      "price": 30000,
+      "color": "blue",
+      "isDiesel": true
+    }
+  },
+  {
+    "lexus": {
+      "model": "LC",
+      "price": 120000,
+      "color": "yellow",
+      "isDiesel": false
+    }
+  },
+  {
+    "porsche": {
+      "model": "718 Cayman",
+      "price": 80000,
+      "color": "red",
+      "isDiesel": false
+    }
+  },
+  {
+    "ford": {
+      "model": "Fiesta",
+      "price": 15000,
+      "color": "blue",
+      "isDiesel": true
+    }
+  },
+  {
+    "audi": {
+      "model": "A8",
+      "price": 90000,
+      "color": "black",
+      "isDiesel": true
+    }
+  },
+  {
+    "porsche": {
+      "model": "911",
+      "price": 150000,
+      "color": "orange",
+      "isDiesel": false
+    }
+  }
+]

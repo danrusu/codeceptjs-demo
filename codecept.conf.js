@@ -5,13 +5,19 @@ const { setHeadlessWhen } = require('@codeceptjs/configure');
 setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  tests: './src/tests/*_test.js',
+  tests: './src/tests/*',
   output: './output',
   helpers: {
     Puppeteer: {
       url: 'http://localhost:3000',
       show: true,
       windowSize: '1200x900',
+    },
+    REST: {
+      endpoint: 'http://qatools.ro',
+      onRequest: (request) => {
+        request.headers.auth = '123';
+      },
     },
   },
   include: {
