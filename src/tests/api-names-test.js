@@ -28,7 +28,7 @@ Scenario('Login', async ({ I }) => {
 });
 
 Scenario('Fetching Names with authentication', async ({ I }) => {
-  const response = await I.sendGetRequest('/api/names.php', {
+  const response = await I.sendGetRequest('/api/names', {
     'access-token': accessToken,
   });
 
@@ -43,7 +43,7 @@ Scenario('Fetching Names with authentication', async ({ I }) => {
 });
 
 Scenario('Fetching Names without authentication should fail', async ({ I }) => {
-  const response = await I.sendGetRequest('/api/names.php');
+  const response = await I.sendGetRequest('/api/names');
   expect(response.status).eq(401);
   expect(response.statusText).eq('Unauthorized');
 });
